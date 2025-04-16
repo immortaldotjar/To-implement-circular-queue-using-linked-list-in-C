@@ -2,18 +2,21 @@
 #include <stdlib.h>
 
 //Creating new node
-struct Node {
+struct Node 
+{
     int data;
     struct Node* next;
 };
 
 //Structure for crcular queue with front and rear pointers
-struct Queue {
+struct Queue 
+{
     struct Node *front, *rear;
 };
 
 //Creating new circular queue
-struct Queue* createQueue() {
+struct Queue* createQueue() 
+{
     struct Queue* q = (struct Queue*)malloc(sizeof(struct Queue));
     q->front = q->rear = NULL;
     return q;
