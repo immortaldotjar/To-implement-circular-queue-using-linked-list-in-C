@@ -54,7 +54,8 @@ void Insert(struct Queue* q)
 //for deleting the element from circular queue
 void Delete(struct Queue* q) 
 {
-    if (q->front == NULL) {
+    if (q->front == NULL) 
+    {
         printf("Queue underflow!\n");
         return;
     }
