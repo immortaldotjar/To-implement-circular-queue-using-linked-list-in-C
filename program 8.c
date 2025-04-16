@@ -8,7 +8,7 @@ struct Node
     struct Node* next;
 };
 
-//Structure for crcular queue with front and rear pointers
+//Structure for circular queue with front and rear pointers
 struct Queue 
 {
     struct Node *front, *rear;
@@ -27,7 +27,8 @@ void Insert(struct Queue* q)
 {
     int value;
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    if (!newNode) {
+    if (!newNode) 
+    {
         printf("Heap overflow!\n");
         return;
     }
