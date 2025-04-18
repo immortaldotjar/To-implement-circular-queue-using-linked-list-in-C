@@ -84,7 +84,7 @@ void Display(struct Queue* q)
 {
     if (q->front == NULL) 
     {
-        printf("Queue is empty!\n");
+        printf("Queue UNDERFLOW!\n");
         return;
     }
     struct Node* temp = q->front;
